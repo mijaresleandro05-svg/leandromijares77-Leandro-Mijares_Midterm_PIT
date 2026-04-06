@@ -31,6 +31,7 @@
     <!-- About -->
     <section>
         <h2>About Me</h2>
+        <p id="greeting"></p>
         <p>Looking for a part-time job to gain experience and learn new things. Currently pursuing a Bachelor of Science in Information Technology at USTP.</p>
         <button onclick="toggleDetails()">Read More</button>
         <p id="details" class="hidden">I am reliable, eager to learn, and willing to work under pressure. I love solving problems and meeting new people.</p>
@@ -57,7 +58,7 @@
     <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-grid">
+        <div class="skills-grid" id="skillsList">
             <div class="skill">
                 <h4>HTML & CSS</h4>
                 <div class="bar"><div class="progress" style="width: 85%"></div></div>
@@ -71,6 +72,14 @@
                 <div class="bar"><div class="progress" style="width: 80%"></div></div>
             </div>
         </div>
+
+        <h3>Add New Skill</h3>
+        <div class="add-skill-form">
+            <input type="text" id="skillName" placeholder="Skill name (e.g., React)">
+            <input type="number" id="skillLevel" placeholder="Level (1-100)" min="1" max="100">
+            <button onclick="addSkill()">Add Skill</button>
+        </div>
+
         <h3>Qualifications:</h3>
         <ul>
             <li>✓ Willing to Work Under Pressure</li>
@@ -112,7 +121,7 @@
         <p>&copy; 2026 Leandro Vercando Mijares | IT 223</p>
     </footer>
 
-    <script src="jquery-features.js"></script>
     <script src="script.js"></script>
+    <script src="jquery-features.js"></script>
 </body>
 </html>
