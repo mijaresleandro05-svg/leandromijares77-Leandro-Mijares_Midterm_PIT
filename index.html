@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Vercando Mijares - Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>LVM</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="about">
+        <img src="resume.jpg" alt="Profile Photo">
+        <div>
+            <h1>Leandro Vercando Mijares</h1>
+            <p>IT Student | Problem Solver</p>
+            <p>📍 Cagayan De Oro City | 📞 +63 967-028-5490 | 📧 mijares.leandro05@gmail.com</p>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section>
+        <h2>About Me</h2>
+        <p>Looking for a part-time job to gain experience and learn new things. Currently pursuing a Bachelor of Science in Information Technology at USTP.</p>
+        <button onclick="toggleDetails()">Read More</button>
+        <p id="details" class="hidden">I am reliable, eager to learn, and willing to work under pressure. I love solving problems and meeting new people.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <h3>B.S. in Information Technology</h3>
+            <p><strong>University of Science and Technology of Southern Philippines</strong></p>
+            <p>Expected Graduation: 2028</p>
+        </div>
+        <div class="edu-item">
+            <h3>High School Graduate (2023)</h3>
+            <p><strong>Liceo de Cagayan University</strong></p>
+        </div>
+        <div class="edu-item">
+            <h3>Elementary Graduate (2017)</h3>
+            <p><strong>Bulua Central School</strong></p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h4>HTML & CSS</h4>
+                <div class="bar"><div class="progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>JavaScript</h4>
+                <div class="bar"><div class="progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>Problem Solving</h4>
+                <div class="bar"><div class="progress" style="width: 80%"></div></div>
+            </div>
+        </div>
+        <h3>Qualifications:</h3>
+        <ul>
+            <li>✓ Willing to Work Under Pressure</li>
+            <li>✓ Reliable and Dependable</li>
+            <li>✓ Quick Learner</li>
+            <li>✓ Honor Student (2021)</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+            <p id="formMsg" class="hidden">Message sent!</p>
+        </form>
+
+        <h3>Contact Info</h3>
+        <table>
+            <tr>
+                <td><strong>Email</strong></td>
+                <td>mijares.leandro05@gmail.com</td>
+            </tr>
+            <tr>
+                <td><strong>Phone</strong></td>
+                <td>+63 967-028-5490</td>
+            </tr>
+            <tr>
+                <td><strong>Location</strong></td>
+                <td>Cagayan De Oro City</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Leandro Vercando Mijares | IT 223</p>
+    </footer>
+
+    <script src="jquery-features.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
